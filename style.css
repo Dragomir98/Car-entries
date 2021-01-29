@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    background-image: linear-gradient(to bottom, rgb(239, 239, 247), rgb(109, 80, 190));
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin: 20px 0 10px 0;
+}
+
+form {
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+    width: 300px;
+    background-color: rgb(177, 181, 214);
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+form:hover {
+    background-image: linear-gradient(to right, rgb(185, 170, 192) ,rgb(190, 190, 221));
+}
+form > label {
+    text-align: left;
+}
+form > input {
+    margin: 5px 0 10px 0;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: all ease-in-out 0.3s;
+}
+form > input:hover {
+    border: 2px solid rgb(175, 26, 26);
+}
+form > label:after {
+    content: '*';
+    color: red;
+}
+.submitBtn {
+    width: 80px;
+    margin: 0 auto;
+    color: white;
+    background-color: rebeccapurple;
+    border: 1px solid rgb(164, 143, 187);
+    border-radius: 4px;  
+    padding: 8px;
+    font-size: 15px;
+    transition: all ease-in-out 0.3s;
+}
+.submitBtn:hover {
+    background-color: rgb(228, 142, 29);
+}
+.submitBtn:disabled {
+    background-color: rgb(185, 168, 168);
+}
+
+.alertmsg-ok {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: rgb(36, 119, 36);
+    color: white;
+}
+
+.alertmsg-error {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: rgb(177, 25, 25);
+    color: white;
+}
+
+.car-list {
+    margin: 0 auto;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    text-align: center;
+    grid-gap: 20px;
+    padding: 20px 300px 0 300px;
+}
+.car {
+    padding: 10px;
+    background-color: rgb(93, 12, 139);
+    color: white;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+    
+}
+.car:hover {
+    background-color: rgb(19, 42, 104);
+    transform: scaleX(1.05);
+}
+
+@media screen and (max-width: 400px) {
+    .car-list {
+        grid-template-columns: 1fr;
+    }
+}
